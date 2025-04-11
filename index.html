@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilson's Disease - Comprehensive Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Comprehensive guide to Wilson's disease, including symptoms, treatment, genetics, support resources, and more.">
+    <style>
+        /* Navigation styles */
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        
+        .nav-menu.hidden {
+            transform: translateY(-100%);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #4a6fa5;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: #4a6fa5;
+        }
+        
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .nav-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 3px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-radius: 6px;
+        }
+        
+        .nav-links a:hover {
+            background-color: #f0f7ff;
+            color: #4a6fa5;
+        }
+        
+        .nav-links a.active {
+            background-color: #4a6fa5;
+            color: white;
+        }
+        
+        /* Dropdown menu styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            z-index: 1001;
+            top: 100%;
+            left: 0;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+        
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 0.95rem;
+            border-radius: 0;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f0f7ff;
+            color: #4a6fa5;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .dropdown-toggle i {
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .dropdown:hover .dropdown-toggle i {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-menu">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-dna"></i> Wilson's Disease</a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">Reports <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="doctor.html">Doctor's Report</a>
+                        <a href="genetic-counselor.html">Genetic Counselor</a>
+                        <a href="parent.html">Parent's Guide</a>
+                        <a href="community.html">Community</a>
+                        <a href="game.html">Game</a>
+                    </div>
+                </div>
+                <a href="references.html">References</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Wilson's Disease</h1>
+                <p class="hero-subtitle">A rare condition that affects how your body handles copper</p>
+                <div class="hero-buttons">
+                    <a href="doctor.html" class="btn btn-primary">Medical Info</a>
+                    <a href="genetic-counselor.html" class="btn btn-secondary">Genetic Info</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Medical research laboratory">
+            </div>
+            <div class="scroll-indicator" onclick="window.scrollTo({top: window.innerHeight, behavior: 'smooth'})">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <div class="section-grid">
+            <div class="section-card">
+                <i class="fas fa-stethoscope"></i>
+                <h2>Doctor's Report</h2>
+                <p>Everything you need to know about Wilson's disease what it does to your body, how doctors spot it, and the treatments that can help you feel better.</p>
+                <a href="doctor.html" class="btn btn-outline">Read More</a>
+            </div>
+            <div class="section-card">
+                <i class="fas fa-dna"></i>
+                <h2>Genetic Counselor</h2>
+                <p>Learn how Wilson's disease runs in families, what it means for you and your relatives, and how genetic testing can help figure things out.</p>
+                <a href="genetic-counselor.html" class="btn btn-outline">Read More</a>
+            </div>
+            <div class="section-card">
+                <i class="fas fa-users"></i>
+                <h2>Parent's Guide</h2>
+                <p>Practical tips for parents of kids with Wilson's disease from managing daily medications and school accommodations to helping your child thrive.</p>
+                <a href="parent.html" class="btn btn-outline">Read More</a>
+            </div>
+            <div class="section-card">
+                <i class="fas fa-hands-helping"></i>
+                <h2>Community Resources</h2>
+                <p>Connect with others who get what you're going through, find support groups, helpful organizations, and tips for dealing with medical costs.</p>
+                <a href="community.html" class="btn btn-outline">Read More</a>
+            </div>
+            <div class="section-card">
+                <i class="fas fa-book"></i>
+                <h2>References</h2>
+                <p>Check out where we got our information trusted medical journals, expert organizations, and resources recommended by specialists.</p>
+                <a href="references.html" class="btn btn-outline">Read More</a>
+            </div>
+            <div class="section-card">
+                <i class="fas fa-gamepad"></i>
+                <h2>Wilson's Disease Challenge</h2>
+                <p>Put yourself in a doctor's shoes! Try to diagnose and treat patients with Wilson's disease in this interactive learning game.</p>
+                <a href="game.html" class="btn btn-outline">Play Now</a>
+            </div>
+        </div>
+
+        <section class="developer-section">
+            <div class="developer-content">
+                <h2>About the Developer</h2>
+                <div class="developer-profile">
+                    <div class="developer-info">
+                        <h3>Caiden Cleveland</h3>
+                        <p class="developer-bio">Hey there! I'm Caiden, a 16-year-old who loves creating websites that actually help people. I built this guide because I wanted to make hard-to-understand medical info easier for everyone. When I'm not coding, you'll find me out on the golf course or hanging with my friends. Hope you find this site useful!</p>
+                        <div class="developer-interests">
+                            <span class="interest-tag"><i class="fas fa-golf-ball"></i> Golf</span>
+                            <span class="interest-tag"><i class="fas fa-code"></i> Web Development</span>
+                            <span class="interest-tag"><i class="fas fa-users"></i> Friends</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
